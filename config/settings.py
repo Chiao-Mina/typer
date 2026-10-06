@@ -126,3 +126,7 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+
+LOGIN_REDIRECT_URL = '/'      # 登入成功後 → 跳到網址 '/'(URL = '/' = 根網址，即網站的首頁。以你目前的開發環境來說就是)
+LOGOUT_REDIRECT_URL = '/'     # 登出之後 → 跳到網址 '/'
